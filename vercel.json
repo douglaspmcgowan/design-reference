@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path((?!_moved).*)",
+      "destination": "https://design-library-nu.vercel.app/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    { "source": "/_moved", "destination": "/index.html" }
+  ]
+}

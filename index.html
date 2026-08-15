@@ -1,12 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=Design%20Styles%20Gallery.html">
-  <title>Slide &amp; Poster Design Reference</title>
-  <style>body{background:#0B1626;color:#CBD7E6;font-family:system-ui,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moved — the Design Library</title>
+<meta name="description" content="The Slide &amp; Poster Design Reference has been superseded by the Design Library.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://design-library-nu.vercel.app/">
+<!-- Belt and braces: vercel.json serves a 308 for every path, so this page is only ever
+     reached when the redirect is bypassed (a local open, a cached client, a preview URL).
+     No auto-refresh: a page that moves under the reader without a click is worse than a
+     page that says where it went. -->
+<style>
+  :root{
+    --bg:#FBFAF7; --panel:#FFFFFF; --sunk:#F3F0EA;
+    --ink:#16130E; --ink2:#544C3F; --line:#E2DCD1; --line2:#CFC6B7;
+    --accent:#B8441F;
+  }
+  :root:not([data-theme="light"]){ }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#141210; --panel:#1D1A16; --sunk:#232019;
+      --ink:#F5F1E8; --ink2:#B4AA98; --line:#332E27; --line2:#463F35;
+      --accent:#E4703F;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#141210; --panel:#1D1A16; --sunk:#232019;
+    --ink:#F5F1E8; --ink2:#B4AA98; --line:#332E27; --line2:#463F35;
+    --accent:#E4703F;
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  html,body{ margin:0; }
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px; line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+    display:flex; align-items:center; justify-content:center;
+    min-height:100vh; padding:32px 20px;
+  }
+  main{ width:100%; max-width:620px; }
+  .kicker{
+    font-size:14px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--ink2); margin:0 0 14px;
+  }
+  h1{ font-size:clamp(30px,6vw,42px); line-height:1.12; letter-spacing:-.02em; margin:0 0 18px; }
+  p{ margin:0 0 16px; color:var(--ink2); }
+  p strong{ color:var(--ink); font-weight:600; }
+  .go{
+    display:inline-block; margin:10px 0 26px;
+    background:var(--accent); color:#FFFFFF; font-weight:600; font-size:17px;
+    text-decoration:none; padding:13px 26px; border-radius:7px;
+    border:1px solid var(--accent);
+  }
+  .go:hover{ filter:brightness(.92); }
+  .go:focus-visible{ outline:3px solid var(--ink); outline-offset:3px; }
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:9px;
+    padding:20px 22px; margin:0 0 18px;
+  }
+  .card h2{ font-size:16px; margin:0 0 10px; letter-spacing:.01em; }
+  ul{ margin:0; padding-left:20px; color:var(--ink2); }
+  li{ margin-bottom:7px; }
+  li:last-child{ margin-bottom:0; }
+  code{
+    font-family:ui-monospace,SFMono-Regular,"Cascadia Mono","Segoe UI Mono",Menlo,Consolas,monospace;
+    font-size:15px; background:var(--sunk); padding:1px 5px; border-radius:3px; color:var(--ink);
+  }
+  footer{
+    margin-top:26px; padding-top:16px; border-top:1px solid var(--line);
+    font-size:14px; color:var(--ink2);
+  }
+  footer a{ color:var(--ink); }
+</style>
 </head>
 <body>
-  <a href="Design%20Styles%20Gallery.html" style="color:#22D3EE">Design Styles Gallery →</a>
+<main>
+  <p class="kicker">This project moved</p>
+  <h1>The Design&nbsp;Library replaced this reference.</h1>
+
+  <p>The Slide &amp; Poster Design Reference was sixteen CSS style demos on one page. Everything
+  it did is now one section of a much larger library — rebuilt, measured, and still free.</p>
+
+  <p><a class="go" href="https://design-library-nu.vercel.app/">Go to the Design Library</a></p>
+
+  <div class="card">
+    <h2>What is there now</h2>
+    <ul>
+      <li><strong>17 complete design languages</strong>, each with a rendered page and a
+        specification sheet that computes every contrast pair in the palette.</li>
+      <li><strong>16 aesthetic styles</strong> — the successors to this page's demos, each rebuilt
+        as a full page with live examples and the CSS recipe.</li>
+      <li>A <strong>workbench</strong> for editing a language's tokens against a real product
+        surface, with a continuous WCAG readout.</li>
+      <li>A <strong>compare view</strong>, nine application fittings, foundations pages for type,
+        colour, layout and motion, and a directory of design systems elsewhere on the web.</li>
+    </ul>
+  </div>
+
+  <p>Every path on the old site now answers <code>308</code> and points at the new one, so old
+  links keep working. The original gallery is still in this repository's git history if you
+  want it.</p>
+
+  <footer>
+    <a href="https://github.com/douglaspmcgowan/design-library">design-library on GitHub</a>
+    · MIT licensed
+  </footer>
+</main>
 </body>
 </html>

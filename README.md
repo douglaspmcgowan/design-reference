@@ -1,28 +1,22 @@
-# Slide & Poster Design Reference
+# Slide & Poster Design Reference — superseded
 
-[![Live demo](https://img.shields.io/badge/live%20demo-design--reference.vercel.app-22D3EE)](https://design-reference.vercel.app)
-[![License: MIT](https://img.shields.io/badge/license-MIT-34D399)](LICENSE)
+**This project has moved.** Everything here was rebuilt and expanded into the
+**[Design Library](https://design-library-nu.vercel.app/)**
+([source](https://github.com/douglaspmcgowan/design-library)).
 
-A browsable field guide to every modern design style for slides, posters, and flyers — with live CSS demos, copy-on-click color palettes, font specimens, layout wireframes, and step-by-step build guides.
+`https://design-reference-seven.vercel.app` now answers `308` on every path and redirects there.
 
-![preview](assets/preview.png)
+## Why
 
-## What's inside
+This repository was one page of sixteen CSS style demos for slides and posters. The Design Library
+keeps all sixteen — rebuilt as full pages with live examples and the CSS recipe — and adds
+seventeen complete design languages with generated specification sheets, a token workbench with a
+live WCAG readout, a compare view, nine application fittings, foundations pages for type, colour,
+layout and motion, and a directory of design systems elsewhere on the web.
 
-| File | What it is |
-|---|---|
-| `Design Styles Gallery.html` | Main gallery — open in a browser |
-| `Slide & Poster Design — Full Guide.md` | Deep-dive text companion (Obsidian / Markdown) |
-| `Slide & Poster Design — Reference Hub.md` | Obsidian hub with cheat sheets |
+## The original
 
-## Styles covered
+Nothing was deleted. `Design Styles Gallery.html`, the two markdown guides and the assets are all
+still in this repository, and the original site is in the git history at commit `1092b9a`.
 
-Glassmorphism · Dark mode/dark-glass · Aurora/mesh gradient · Bento grid · Neubrutalism · Swiss/International · Editorial/serif · Assertive minimalism · Maximalism/dopamine · Kinetic/big type · Claymorphism · Neumorphism · Y2K/retro · Vaporwave/synthwave · Organic/blob · Anti-design
-
-## Usage
-
-Open `Design Styles Gallery.html` directly in a browser — no build step. Click any color swatch to copy its hex. Each style card links to live real-world examples.
-
-## 2026 meta-trend
-
-Most rising styles are a reaction against AI sameness. Raw, hand-made looks (neubrutalism, anti-design, Y2K, kinetic type) are surging because they read as made by a person. On the polished side, three defaults settled in: **bento grids, dark mode, aurora gradients**.
+MIT licensed.
