@@ -8,6 +8,15 @@
     }
   ],
   "rewrites": [
-    { "source": "/_moved", "destination": "/index.html" }
-  ]
+    {
+      "source": "/_moved",
+      "destination": "/index.html"
+    }
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "**": false,
+      "master": true
+    }
+  }
 }
